@@ -1,0 +1,290 @@
+// _______________ Gilroy FOnt ______________//
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy/Gilroy-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy/Gilroy-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+// _______________________________________ //
+
+body {
+  font-family: 'Gilroy', "-apple-system", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  font-weight: 500 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Scroll div class
+.scroll-div {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+/* Scroll 1 */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
+  border-radius: 10px;
+}
+
+// Flexbox gap 
+.gap-4 {
+  gap: 16px;
+}
+
+.gap-5 {
+  gap: 20px;
+}
+
+.gap-6 {
+  gap: 24px;
+}
+
+// Font size classes
+.text-sm {
+  font-size: 14px;
+}
+
+.text-md {
+  font-size: 16px;
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
+.text-xl {
+  font-size: 22px;
+}
+// Width & Height classes
+.w-4 {
+  width: 16px !important;
+}
+
+.h-4 {
+  height: 16px !important;
+}
+
+.min-w-200 {
+  min-width: 200px;
+  width: 100%;
+}
+
+.min-w-250 {
+  min-width: 250px;
+  width: 100%;
+}
+
+.max-w-300 {
+  max-width: 300px;
+  width: 100%;
+}
+
+.min-w-300 {
+  min-width: 300px;
+  width: 100%;
+}
+
+.min-w-350 {
+  min-width: 350px;
+  width: 100%;
+}
+
+.max-w-350 {
+  max-width: 350px;
+  width: 100%;
+}
+
+.max-w-400 {
+  max-width: 400px;
+  width: 100%;
+}
+
+.min-w-400 {
+  min-width: 400px;
+}
+
+.max-w-500 {
+  max-width: 500px;
+  width: 100%;
+}
+
+.max-w-700 {
+  max-width: 700px;
+  width: 100%;
+}
+
+.min-w-700 {
+  min-width: 700px;
+}
+
+.max-w-900 {
+  max-width: 900px;
+}
+
+.min-w-800 {
+  min-width:800px;
+}
+
+.max-w-800 {
+  max-width:800px;
+}
+
+.min-w-950 {
+  min-width: 950px;
+}
+
+
+// Border classes
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+  &:last-child {
+    border-color: transparent;
+  }
+}
+
+.border-bottom-brand {
+  border-bottom: 1px solid;
+  border-color: $brand;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-right {
+  border-right: 1px solid #333;
+
+  @media screen and (max-width: 1024px) {
+    & {
+      border: none;
+    }
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.flex-1 { 
+  flex: 1;
+}
+
+.my-card {
+  flex-basis: 300px;
+  flex-grow: 1;
+  background: #F0F0F0;
+}
+
+.q-field--outlined .q-field__control {
+  border-radius: 8px;
+}
+
+// Background text shadow colors
+.bg-main {
+  background-color: $main-bg;
+}
+
+.bg-brand {
+  background-color: $brand;
+}
+
+.bg-brand-light {
+  background-color: $brand-light;
+}
+
+.bg-light-blue {
+  background-color: $light-blue;
+}
+
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+.text-brand {
+  color: $brand;
+}
+
+.text-brand-light {
+  color: $brand-light;
+}
+
+.text-black-light {
+  color: rgba(17, 17, 17, 0.48);
+}
+
+.q-drawer {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 20px 20px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-block {
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-item {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 10px 10px rgba(0, 0, 0, 0.08);
+}
+//  ------------------------------ //
+
+// border radius classes //
+
+.border-brand {
+  border: 1px solid $brand;
+}
+
+.rounded-sm {
+  border-radius: 8px !important;
+}
+
+.rounded-md {
+  border-radius: 12px !important;
+}
+
+.rounded-lg {
+  border-radius: 16px !important;
+}
+
+.rounded-xl {
+  border-radius: 24px !important;
+}
+
+.rounded-2xl {
+  border-radius: 32px !important;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+//  ------------------------------ //
